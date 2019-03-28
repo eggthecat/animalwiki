@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css"type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Slabo+27px" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Animal Wiki</title>
@@ -12,26 +13,34 @@
     <h1>Learn About Animals!</h1>
     <h4>Please select one to find out more about them!</h4>
     <div class="container">
-      <div class="buttons">
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="Seals" checked> Seals
-          </label>
+      <form id="form">
+        <div class="buttons">
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="Seals" > Seals
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="Eagles"> Eagles
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="animal" value="Monkeys"> Monkeys
+            </label>
+            <br>
+            <hr>
+            <button type="submit" name="button">I want to learn about this animal!</button>
+            <!-- <p><input type="button" id="btnAnimal" value="Let's learn about this animal!"></p> -->
+          <hr>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="Eagles"> Eagles
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="animal" value="Monkeys"> Monkeys
-          </label>
-        </div>
-      </div>
+      </form>
+
 
       <div class="animals">
-        <div id="Seals">
+        <div id="infoSeals">
           <img src="img/seal.jpg" alt="Image of a cute seal face">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -43,10 +52,6 @@
           <img src="img/monkey.jpg" alt="Picture of a monkey with a big potbelly">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
-
-
-
       </div>
 
 

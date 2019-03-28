@@ -1,23 +1,23 @@
-
-// var animal = $("input:radio[name='animal']:checked").val();
-// var animal = $("input:radio[name=animal]:checked").val();
-
 $(document).ready(function() {
-  $("input[type='button']").click(function(){
-    if($('input:checked #Seals')) {
-      $("Seals").show();
-    }
+  $("#form").submit(function(event) {
+    event.preventDefault();
+    var animal = $('input[name=animal]:checked').val();
 
+    if(animal === "Seals") {
+      $("#Eagles").hide();
+      $("#Monkeys").hide();
+      $("#infoSeals").show();
+    } else if(animal === "Eagles") {
+      $("#Monkeys").hide();
+      $("#infoSeals").hide();
+      $("#Eagles").show();
+    } else if(animal === "Monkeys") {
+      $("#Eagles").hide();
+      $("#infoSeals").hide();
+      $("#Monkeys").show();
+    } else {
 
-
+    };
 
   });
-
-});
-//
-// $(document).ready(function() {
-//   $("value#Seals").click(function() {
-//     $("#Seals").show();
-//   });
-//
-// });
+  });
